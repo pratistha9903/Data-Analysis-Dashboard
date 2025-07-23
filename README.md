@@ -72,8 +72,9 @@ FROM superstore
 GROUP BY Month
 ORDER BY Month;
 
+```
 ### 📌 Power BI Dashboard
-- Built interactive report:
+  - Built interactive report:
   - Cards: Total Sales, Total Profit
   - Bar Charts: Sales by Region, Top Sub-Categories
   - Line Chart: Monthly Sales Trend
@@ -88,7 +89,7 @@ ORDER BY Month;
 - **Western Region** contributes the most to sales
 - **Sales spike** in **November and December**
 
----
+-----
 
 ## 💡 Why This Project?
 
