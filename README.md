@@ -1,2 +1,73 @@
-# Sales Data-Analysis-Dashboard
-📊 End-to-end Sales Insights project using the Superstore dataset. Tools used: Excel, SQL (SQLite), Power BI. Includes data cleaning, pivot tables, SQL queries, and interactive dashboards.
+
+# 📊 Sales Insights Dashboard – Superstore Dataset
+
+## 🔍 Overview
+This is a complete data analytics project built using the **Superstore dataset**. It simulates real-world retail data analysis using **Excel**, **SQL**, and **Power BI** to generate actionable business insights.
+
+---
+
+## 🧰 Tools & Technologies
+- **Excel** – Data cleaning, profit calculations, pivot tables, basic charts
+- **SQLite (SQL)** – Customer analysis, trend extraction, category insights
+- **Power BI** – Interactive dashboard with KPIs, filters, and visualizations
+
+---
+
+## 📁 Dataset
+- `superstore_cleaned.csv` – Cleaned dataset used in Excel, SQL, and Power BI
+- Source: Sample Superstore data (publicly available on Kaggle and Tableau)
+
+---
+
+## ✅ Key Business Insights
+
+| 🔹 Insight Area         | 📌 Insight                                                                 |
+|------------------------|--------------------------------------------------------------------------|
+| 🗺️ Region-wise Sales     | West region had the highest total sales: ₹7.25 Lakhs                    |
+| 💼 Category Profit       | Technology was the most profitable category: ₹1.45 Lakhs                |
+| 📦 Top Sub-Categories   | Phones and Chairs contributed the most to sales                         |
+| 📈 Sales Trends         | November showed peak monthly sales; Feb had the lowest                  |
+| 👥 Customer Segments    | Consumer segment ordered the most items                                 |
+
+---
+
+## 📌 Excel Work
+- Cleaned null values and removed duplicates
+- Created `Profit %` column using:
+=IF(Sales<>0, Profit/Sales * 100, 0)
+
+  ## SQL
+   Built Pivot Tables:
+- Sales by Region
+- Profit by Category
+- Monthly Sales Trend
+- Top 5 Sub-Categories by Sales
+- Visualized using Pivot Charts
+
+---
+
+## 💻 SQL Queries (SQLite)
+Some of the key queries used:
+
+```sql
+-- Total Sales
+SELECT ROUND(SUM(Sales), 2) AS Total_Sales FROM superstore;
+
+-- Profit by Category
+SELECT Category, ROUND(SUM(Profit), 2) AS Total_Profit
+FROM superstore
+GROUP BY Category;
+
+-- Top 5 Customers
+SELECT "Customer Name", ROUND(SUM(Sales), 2) AS Total_Sales
+FROM superstore
+GROUP BY "Customer Name"
+ORDER BY Total_Sales DESC
+LIMIT 5;
+
+-- Monthly Sales Trend
+SELECT SUBSTR("Order Date", 7, 4) || '-' || SUBSTR("Order Date", 4, 2) AS Month,
+     ROUND(SUM(Sales), 2) AS Total_Sales
+FROM superstore
+GROUP BY Month
+ORDER BY Month;
