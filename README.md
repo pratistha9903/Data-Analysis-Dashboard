@@ -71,3 +71,42 @@ SELECT SUBSTR("Order Date", 7, 4) || '-' || SUBSTR("Order Date", 4, 2) AS Month,
 FROM superstore
 GROUP BY Month
 ORDER BY Month;
+
+### 📌 Power BI Dashboard
+- Built interactive report:
+  - Cards: Total Sales, Total Profit
+  - Bar Charts: Sales by Region, Top Sub-Categories
+  - Line Chart: Monthly Sales Trend
+  - Filters: Region and Category (Slicers)
+
+---
+
+## 📈 Key Insights
+
+- **Phones** and **Chairs** are top-selling sub-categories
+- **Technology** brings in the highest profit
+- **Western Region** contributes the most to sales
+- **Sales spike** in **November and December**
+
+---
+
+## 💡 Why This Project?
+
+This project was created to simulate a real business scenario using a public dataset. It demonstrates my skills in:
+- Data Cleaning
+- SQL Querying
+- Dashboard Design
+- Insight Communication
+
+---
+
+## 👩‍💻 About Me
+
+**Name:** Pratistha Srivastava  
+**Role:** B.Tech CSE (AI/ML), Data Analytics Enthusiast  
+**Email:** pratistha9903@gmail.com  
+**LinkedIn:** [linkedin.com/in/pratistha9903](https://www.linkedin.com/in/pratistha9903)
+
+---
+
+⭐ *If you liked this project, feel free to star the repo and share your feedback!*
