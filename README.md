@@ -106,7 +106,7 @@ This project was created to simulate a real business scenario using a public dat
 **Name:** Pratistha Srivastava  
 **Role:** B.Tech CSE (AI/ML), Data Analytics Enthusiast  
 **Email:** pratistha9903@gmail.com  
-**LinkedIn:** [linkedin.com/in/pratistha9903](https://www.linkedin.com/in/pratistha9903)
+**LinkedIn:** www.linkedin.com/in/pratistha-srivastava-113234221
 
 ---
 
